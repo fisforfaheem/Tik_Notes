@@ -12,7 +12,11 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(),
-      body: Container(),
+      body: Container(
+        height: 200,
+        width: 200,
+        color: Colors.black,
+      ),
     );
   }
 }

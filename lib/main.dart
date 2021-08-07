@@ -3,8 +3,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:ticknotes/pages/login.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  // WidgetsFlutterBinding.ensureInitialized();
+  //await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'My Notes',
-      theme: ThemeData.dark().copyWith(
-        primaryColor: Colors.white,
-      ),
+      // theme: ThemeData.dark().copyWith(
+      //   primaryColor: Colors.white,
+      // ),
       home: LoginPage(),
     );
   }
